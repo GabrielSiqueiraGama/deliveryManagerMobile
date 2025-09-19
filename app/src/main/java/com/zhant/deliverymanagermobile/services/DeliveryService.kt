@@ -1,5 +1,6 @@
-package com.zhant.deliverymanagermobile
+package com.zhant.deliverymanagermobile.services
 
+import com.zhant.deliverymanagermobile.model.DeliveryEntity
 import retrofit2.Call
 import retrofit2.http.GET
 

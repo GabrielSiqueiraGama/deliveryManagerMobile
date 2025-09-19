@@ -1,4 +1,4 @@
-package com.zhant.deliverymanagermobile
+package com.zhant.deliverymanagermobile.model
 
 import com.google.gson.annotations.SerializedName
 import java.time.LocalDateTime
