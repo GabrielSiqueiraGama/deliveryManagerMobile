@@ -25,8 +25,8 @@ class RetrofitClient private constructor(){
             }
         }
 
-        fun createDeliveryService(): DeliveryService{
-            return getRetrofitInstance().create(DeliveryService::class.java)
+        fun <S> createService(serviceClass: Class<S>): S{
+            return getRetrofitInstance().create(serviceClass)
         }
     }
 

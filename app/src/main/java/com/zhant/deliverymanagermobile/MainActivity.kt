@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.zhant.deliverymanagermobile.databinding.ActivityMainBinding
 import com.zhant.deliverymanagermobile.model.DeliveryEntity
+import com.zhant.deliverymanagermobile.network.DeliveryService
 import com.zhant.deliverymanagermobile.network.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback
@@ -16,7 +17,7 @@ import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 
-    private val deliveryService = RetrofitClient.createDeliveryService()
+    private val deliveryService = RetrofitClient.createService(DeliveryService::class.java)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
