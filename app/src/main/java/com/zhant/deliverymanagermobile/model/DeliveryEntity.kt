@@ -8,7 +8,7 @@ data class DeliveryEntity(
     @SerializedName("id")
     val id: Int,
     @SerializedName("orderDate")
-    val orderDate: LocalDateTime,
+    val orderDate: String,
     @SerializedName("neighborhood")
     val neighborhood: String,
     @SerializedName("amount")
